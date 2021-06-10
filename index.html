@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header><h1>The A Team Quiz</h1></header>
+
+    <div class="overlay show">
+        <button type="button"  class="start">Start</button>
+    </div>
+
+    <div class="quiz hidden">
+        <p class="question">What is the capital of sweden?</p>
+        <button type="button"  class="answer wrong">Copanhagen</button>
+        <button type="button"  class="answer wrong">Mogadishu</button>
+        <button type="button"  class="answer right">Stockholm</button>
+        <button type="button"  class="answer wrong">Oslo</button>
+    </div>
+    
+    <div class="quiz hidden">
+        <p class="question">What year did the berlin wall constructed?</p>
+        <button type="button"  class="answer wrong">1989</button>
+        <button type="button"  class="answer right">1961</button>
+        <button type="button"  class="answer wrong">1950</button>
+        <button type="button"  class="answer wrong">1977</button>
+    </div>
+    
+    <div class="quiz hidden">
+        <p class="question">Martin Luther is famously known for his involvement in which Historical event?</p>
+        <button type="button"  class="answer wrong">Assasination of Abraham Licoln</button>
+        <button type="button"  class="answer wrong">The holocaust</button>
+        <button type="button"  class="answer wrong">WW1</button>
+        <button type="button"  class="answer right">Protestant Reformation</button>
+    </div>
+    
+    <div class="quiz hidden">
+        <p class="question">What year did mount vesivius erupt detroying pompeii?</p>
+        <button type="button"  class="answer right">79 AD</button>
+        <button type="button"  class="answer wrong">490 BC</button>
+        <button type="button"  class="answer wrong">2001 AD</button>
+        <button type="button"  class="answer wrong">1 BC</button>
+    </div>
+    
+    <div class="quiz hidden">
+        <p class="question">Who was prime minister of the UK at the start of world war 2?</p>
+        <button type="button"  class="answer wrong">Margaret Thacther</button>
+        <button type="button"  class="answer right">Neville Chamberlain</button>
+        <button type="button"  class="answer wrong">Winston Churchill</button>
+        <button type="button"  class="answer wrong">John Monash</button>
+    </div>
+    
+    <div class="quiz hidden">
+        <p class="question">Who directed Reservoir Dogs?</p>
+        <button type="button"  class="answer wrong">Denis villeneuve</button>
+        <button type="button"  class="answer wrong">Michael Bay</button>
+        <button type="button"  class="answer wrong">John Huston</button>
+        <button type="button"  class="answer right">Quentin Tarantino</button>
+    </div>
+    
+    <div class="quiz hidden">
+        <p class="question">Where would you find the sea of tranquility?</p>
+        <button type="button"  class="answer wrong">Spain</button>
+        <button type="button"  class="answer right">USA</button>
+        <button type="button"  class="answer wrong">The Moon</button>
+        <button type="button"  class="answer wrong">The Human Body</button>
+    </div>
+    
+    <div class="quiz hidden">
+        <p class="question">Which band released the 1976 song (Don't Fear) The Reaper?</p>
+        <button type="button"  class="answer wrong">Boston</button>
+        <button type="button"  class="answer right">Blue Oyster Cult</button>
+        <button type="button"  class="answer wrong">Toto</button>
+        <button type="button"  class="answer wrong">Kansas</button>
+    </div>
+    
+    <div class="quiz hidden">
+        <p class="question">What year did man first walk on the moon?</p>
+        <button type="button"  class="answer wrong">1958</button>
+        <button type="button"  class="answer wrong">1969</button>
+        <button type="button"  class="answer wrong">1971</button>
+        <button type="button"  class="answer right">Man has never been to the moon</button>
+    </div>
+    
+    <div class="quiz hidden">
+        <p class="question">Which Billoinaire drinks the blood of children?</p>
+        <button type="button"  class="answer wrong">Donald Trump</button>
+        <button type="button"  class="answer right">Bill Gates</button>
+        <button type="button"  class="answer wrong">Elon "Daddy" Musk</button>
+        <button type="button"  class="answer wrong">The dad from Richie Rich</button>
+    </div>
+
+    <div class="quiz hidden">
+        <p id="final"></p>
+    </div>
+
+    <p id="timer"></p>
+    
+    <p id='slow'>Too Slow!</p>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+/* buttons */
+
+[type="button"]:hover {
+    background-color: aqua;
+}
+
+.answer {
+    width: 70%;
+    align-self: center;
+    margin: .5em;
+    height: 2em;
+}
+/* .button {
+    flex-direction: column;
+} */
+
+.wrong:click {
+
+}
+
+
+/* font  */
+
+* {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* display */
+
+.quiz {
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+} 
+
+#timer {
+    margin-top: 1em; 
+    font-size: 10em;
+}
+
+/* layout */
+
+header {
+    margin-top: 20%;
+}
