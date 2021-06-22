@@ -32,13 +32,13 @@ answer[i].addEventListener('click', e => {
         correctAnswers += 1;
         console.log(correctAnswers)
         element.innerHTML = "Correct";
-        setTimeout(hide, 500);
+        setTimeout(hide, 1000);
         
         
     }  else if( element.classList.contains("wrong")){
         element.style.backgroundColor = "red";
         element.innerHTML = "Wrong";
-        setTimeout(hide, 500);;
+        setTimeout(hide, 1000);;
     }
 }) 
 }
@@ -46,9 +46,10 @@ answer[i].addEventListener('click', e => {
 console.log(check)
 // hides question after answering and shows next question.
 function hide() {
+  countdown = 10
   slow.classList.add("hidden");
   background.style.backgroundColor = "white";
-
+  timer.innerHTML = countdown
   
     quiz[j].classList.add("hidden");
     j++;
@@ -72,12 +73,14 @@ function time() {
       clearInterval(x);
       countdown = 10;
       background.style.backgroundColor = "red";
-      slow.classList.remove("hidden");
-      setTimeout(hide, 2000);
+      
+      timer.innerHTML = "Too Slow!";
+      setTimeout(hide, 1000);
+      
       
     }  else if (j == 10) {
-        if(correctAnswers = 1)
-      final.innerHTML = "You have gotten " + correctAnswers + "c";
+        
+      final.innerHTML = "You have gotten " + correctAnswers + " correct";
       timer.classList.add("hidden");
       clearInterval(x);
     }

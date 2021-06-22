@@ -4,30 +4,32 @@
     background-color: aqua;
 }
 
-.answer {
+[type="button"] {
     width: 70%;
     align-self: center;
     margin: .5em;
-    height: 2em;
+    height: 5em;
+    border-radius: 2%;
+    background-color: yellow;
+    font-size: .75em;
 }
 /* .button {
     flex-direction: column;
 } */
-
-.wrong:click {
-
-}
-
 
 /* font  */
 
 * {
     text-align: center;
     font-weight: bold;
+    color: blue;
+    
 }
 
 /* display */
-
+body{
+    
+}
 .quiz {
     display: flex;
     flex-direction: column;
@@ -38,8 +40,8 @@
 } 
 
 #timer {
-    margin-top: 1em; 
-    font-size: 10em;
+    margin-top: 20px;
+    font-size: 5em;
 }
 
 /* layout */
