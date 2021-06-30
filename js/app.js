@@ -80,7 +80,7 @@ function time() {
       
     }  else if (j == 10) {
         
-      final.innerHTML = "You have gotten " + correctAnswers + " correct";
+      final.innerHTML = "You have " + correctAnswers + " correct";
       timer.classList.add("hidden");
       clearInterval(x);
     }
